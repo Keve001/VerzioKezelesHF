@@ -14,7 +14,8 @@ namespace VerzioKezelesHF
             int szam = 0;
             Console.WriteLine("Adja meg hány számot akar:");
             N = Convert.ToInt32(Console.ReadLine());
-            int[] t = new int[N];
+            List<int> t = new List<int>();
+            //int[] t = new int[N];
             do
             {
                 
@@ -24,11 +25,16 @@ namespace VerzioKezelesHF
 
             } while (szam !=N);
             int atlagSzam = 0;
-            for (int i = 0; i < t.Length; i++)
+            for (int i = 0; i < t.Count; i++)
             {
                 atlagSzam += t[i];
             }
-            Console.WriteLine("Atlag:{0}",atlagSzam/t.Length);
+            Console.WriteLine("Atlag:{0}",atlagSzam/t.Count);
+            for (int i = 0; i < t.Count; i++)
+            {
+
+            }
+
 
             Console.ReadLine();
         }
