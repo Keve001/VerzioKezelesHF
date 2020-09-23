@@ -15,7 +15,7 @@ namespace VerzioKezelesHF
             do
             {
                 Console.WriteLine("Adja meg a számot!");
-                int sajat = Convert.ToInt32(Console.ReadLine());
+                t[szam] = Convert.ToInt32(Console.ReadLine());
                 szam++;
 
             } while (szam !=10);
