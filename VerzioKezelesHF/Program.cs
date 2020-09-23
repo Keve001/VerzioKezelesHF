@@ -10,15 +10,19 @@ namespace VerzioKezelesHF
     {
         static void Main(string[] args)
         {
+            int N;
             int szam = 0;
-            int[] t = new int[5];
+            Console.WriteLine("Adja meg hány számot akar:");
+            N = Convert.ToInt32(Console.ReadLine());
+            int[] t = new int[N];
             do
             {
+                
                 Console.WriteLine("Adja meg a számot!");
                 t[szam] = Convert.ToInt32(Console.ReadLine());
                 szam++;
 
-            } while (szam !=5);
+            } while (szam !=N);
             int atlagSzam = 0;
             for (int i = 0; i < t.Length; i++)
             {
